@@ -38,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
            else if(v.getId() == R.id.button4){
                result = num1/num2;
            }
+           else if(v.getId()== R.id.button5){
+               result = num1%num2;
+           }
            t1.setText(""+result);
     }
 }
