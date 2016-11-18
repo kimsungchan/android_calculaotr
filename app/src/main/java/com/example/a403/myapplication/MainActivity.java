@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        int num1 = Integer.parseInt((n1.getText().toString()));
-        int num2 = Integer.parseInt((n2.getText().toString()));
-        int result = 0;
+        double num1 = Double.parseDouble((n1.getText().toString()));
+        double num2 = Double.parseDouble((n2.getText().toString()));
+        double result = 0;
 
         if (v.getId() == R.id.button) {
             result = num1 + num2;
