@@ -28,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "아무것도 입력하지 않으면 결과가 나오지않습니다", Toast.LENGTH_SHORT).show();
             return;
         }
+        if(n2.getText().toString().equals("0")){
+            Toast.makeText(getApplicationContext(),"0으로 나누면 계산할수없습니다.",Toast.LENGTH_SHORT).show();
+            return;
+        }
 
         double num1 = Double.parseDouble((n1.getText().toString()));
         double num2 = Double.parseDouble((n2.getText().toString()));
